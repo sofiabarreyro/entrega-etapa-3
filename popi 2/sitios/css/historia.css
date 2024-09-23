@@ -1,0 +1,130 @@
+* {
+box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+header,
+main,
+footer {
+overflow: hidden;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: 'Righteous', cursive;
+background-color: #839cb5;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+header {
+display: flex;
+align-items: center;
+background-color: #686466;
+color: #fff;
+padding: 10px;
+}
+
+.link {
+flex: 0.1;
+width: 15%;
+height: 100px;
+}
+
+.logo {
+flex: 0.5;
+width: 100%;
+height: 100px;
+background-image: url("C:/Users/santiago/Desktop/popi 2/sitios/fotos/index/loigo.jpeg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 50%;
+}
+
+.titulo {
+flex: 2;
+text-align: center;
+}
+
+.contenedor {
+display: grid;
+grid-template-columns: 66% 33%;
+grid-template-rows: 50% 50%;
+grid-gap: 20px;
+padding: 20px;
+margin-bottom: 218px;
+height: 1240px;
+}
+
+.historia,
+.trago {
+width: 100%;
+height: 600px;
+}
+
+.m1,
+.m3 {
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.m2,
+.m4 {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #01000a;
+color: black;
+display: grid;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+font-size: 30px;
+}
+
+.m1 {
+
+}
+
+.m3 {
+
+}
+
+footer {
+color: black;
+background-color: #686466;
+display: grid;
+grid-template-columns: 70% 15% 15%;
+}
+
+.foot {
+width: 100%;
+height: 100px;
+}
+
+.f1 {
+display: flex;
+align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+.contenedor {
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+height: auto;
+}
+
+.historia,
+.trago {
+height: 300px;
+}
+
+.m2,
+.m4 {
+font-size: 20px;
+}
+.link {
+flex: 0.5;
+}
+}

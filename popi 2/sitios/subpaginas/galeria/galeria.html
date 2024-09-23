@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="C:\Users\santiago\Desktop\popi 2\sitios\css\galeria.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+		<a class="link" href="C:\Users\santiago\Desktop\popi 2\sitios\index.html">
+		<div class="logo">
+		</div>
+	</a>
+
+
+		<div class="titulo">
+			<h1>Galerias</h1>
+		</div>
+	</header>
+  <main>
+    <div class="grid-layout">
+      <div class="caja1">
+        <img class="misFotos" src="C:\Users\santiago\Desktop\popi 2\sitios\fotos\galeria\WhatsApp Image 2024-09-22 at 21.11.06.jpeg" style="width:100%" style="height:800px">
+        <img class="misFotos" src="C:\Users\santiago\Desktop\popi 2\sitios\fotos\galeria\WhatsApp Image 2024-09-22 at 21.11.56.jpeg" style="width:100%" style="height:800px">
+        <img class="misFotos" src="C:\Users\santiago\Desktop\popi 2\sitios\fotos\galeria\WhatsApp Image 2024-09-22 at 21.11.58.jpeg" style="width:100%" style="height:800px">
+      </div>
+      <div class="caja c3">
+        <p>The Andy Warhol Museum (Pittsburgh, Estados Unidos)<br>
+          Este museo está dedicado íntegramente a la vida y obra de Andy Warhol, el artista más emblemático del Pop Art. Ubicado en la ciudad <br>
+          natal del artista, el museo tiene la mayor colección de sus obras, incluyendo pinturas, esculturas, películas y objetos personales.</p>
+      </div>
+      <div class="caja2">
+        <img class="misFotos2" src="C:\Users\santiago\Desktop\popi 2\sitios\fotos\galeria\2\WhatsApp Image 2024-09-22 at 20.00.42.jpeg" style="width:100%" style="height:800px">
+        <img class="misFotos2" src="C:\Users\santiago\Desktop\popi 2\sitios\fotos\galeria\2\WhatsApp Image 2024-09-22 at 20.00.53.jpeg" style="width:100%" style="height:800px">
+        <img class="misFotos2" src="C:\Users\santiago\Desktop\popi 2\sitios\fotos\galeria\2\WhatsApp Image 2024-09-22 at 21.25.12.jpeg" style="width:100%" style="height:800px">
+      </div>
+      <div class="caja c4">
+        <p>MoMA (Museum of Modern Art, Nueva York, Estados Unidos)<br>
+          El MoMA cuenta con una de las colecciones más prestigiosas de arte moderno, incluyendo una extensa muestra de obras de Pop Art. <br>
+          Entre sus piezas más destacadas están las de Andy Warhol, Roy Lichtenstein y Claes Oldenburg.</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="foot f1"><h2>© 2023 Pop Arts. Todos los derechos reservados</h2></div>
+  </footer>
+  <script>
+var myIndex = 0;
+var myIndex2 = 0;
+carousel();
+
+  function carousel() {
+    var i;
+    var k;
+    var x = document.getElementsByClassName("misFotos");
+    var y = document.getElementsByClassName("misFotos2");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    for (k = 0; k < x.length; k++){
+      y[k].style.display = "none";
+    }
+    myIndex2++;
+    if (myIndex2 > y.length) {myIndex2 = 1}
+    y[myIndex2-1].style.display = "block";
+    setTimeout(carousel, 5000);
+  }
+  </script>
+  </body>
+</html>

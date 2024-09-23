@@ -1,0 +1,174 @@
+
+.grid-layout {
+  width: 100%;
+  display: grid;
+  grid-template-areas: 'carrusel carrusel carrusel carrusel carrusel carrusel'
+                       ' texto1 texto1 texto1 texto1 texto1 texto1'
+                       'carrusel2 carrusel2 carrusel2 carrusel2 carrusel2 carrusel2'
+                       'texto2 texto2 texto2 texto2 texto2 texto2';
+}
+
+.caja {
+  background-color: gray;
+  width: 100%;
+  height: 400px;
+}
+
+.caja1 {
+  background-image: url("fotos/pic.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 810px;
+  grid-area: carrusel;
+  margin: 5px;
+  border: 5px solid black;
+}
+.caja2 {
+  background-image: url("fotos/pic.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 810px;
+  grid-area: carrusel2;
+  margin: 5px;
+  border: 5px solid black;
+}
+.misFotos, .misFotos2 {
+  display: none;
+  height: 800px;
+}
+.c2 {
+  background-image: url("fotos/game.jpg");
+  grid-area: foto1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+}
+
+.c3 {
+  background-color: #b1e1e9;
+  grid-area: texto1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin: 20px;
+}
+p {
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+}
+.c4 {
+  background-color: #b1e1e9;
+  grid-area: texto2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin: 20px;
+}
+footer{
+  color: black;
+  background-color: #686466;
+  display: grid;
+  grid-template-columns: 70% 15% 15%;
+}
+.foot{
+  width: 100%;
+  height: 100px;
+}
+.f1{
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-layout {
+    grid-template-areas:
+      'carrusel'
+      'foto1'
+      'texto1'
+      'carrusel2'
+      'texto2'
+      'foto2';
+  }
+
+  .linklogo {
+    display: none;
+  }
+
+  .c1,
+  .c2,
+  .c3,
+  .c4,
+  .c5 {
+    margin: 10px;
+  }
+h1{
+  justify-self: center;
+  font-size: 40px;
+}
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+    justify-self: center;
+  }
+}
+* {
+box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+header,
+main,
+footer {
+overflow: hidden;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: 'Righteous', cursive;
+background-color: #839cb5;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+header {
+display: flex;
+align-items: center;
+background-color: #686466;
+color: #fff;
+padding: 10px;
+}
+
+.link {
+flex: 0.1;
+width: 15%;
+height: 100px;
+}
+
+.logo {
+flex: 0.5;
+width: 100%;
+height: 100px;
+background-image: url("C:/Users/santiago/Desktop/popi 2/sitios/fotos/index/loigo.jpeg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 50%;
+}
+
+.titulo {
+flex: 2;
+text-align: center;
+}

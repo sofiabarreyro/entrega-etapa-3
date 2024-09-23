@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pop arts</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="C:\Users\santiago\Desktop\popi 2\sitios\css\index.css">
+</head>
+  <body>
+<header>
+  <div id="encabezado">
+    <h1>Retro Pop Culture</h1>
+  </div>
+  <div class="menu">
+    <a href="C:\Users\santiago\Desktop\popi 2\sitios\subpaginas\historia\historia.html">historia</a>
+    <a href="C:\Users\santiago\Desktop\popi 2\sitios\subpaginas\galeria\galeria.html">Galeria</a>
+    <a href="C:\Users\santiago\Desktop\popi 2\sitios\subpaginas\artistas\artistas.html">Artistas</a>
+    <a href="C:\Users\santiago\Desktop\popi 2\sitios\subpaginas\eventos\eventos_y_exibiciones.html">Eventos</a>
+    <a href="C:\Users\santiago\Desktop\popi 2\sitios\subpaginas\contactos\contactos.html">Contacto</a>
+  </div>
+</header>
+<main>
+  <div class="grid-layout">
+    <div class="caja1">
+      <img class="misFotos" src="C:\Users\santiago\Desktop\popi 2\sitios\fotos\index\f1.jpeg" style="width:100%">
+      <img class="misFotos" src="C:\Users\santiago\Desktop\popi 2\sitios\fotos\index\f2.jpeg" style="width:100%">
+      <img class="misFotos" src="C:\Users\santiago\Desktop\popi 2\sitios\fotos\index\f3.jpeg" style="width:100%">
+    </div>
+    <div class="caja c2">
+    </div>
+    <div class="caja c3">
+      <p>¿Qué es el Pop Art?<br>
+        El Pop Art es un movimiento artístico que surgió en la<br>
+        década de 1950 en el Reino Unido y los Estados Unidos,<br>
+         y se consolidó en los años 60 como una de las corrientes<br>
+          más influyentes del siglo XX. Se caracterizó por tomar <br>
+         imágenes y objetos de la cultura popular y elevarlos al <br>
+         estatus de arte. Este movimiento rompió con las ideas<br>
+         tradicionales del arte "elevado" y acercó el arte al día<br>
+          a día de las personas.</p>
+    </div>
+    <div class="caja c4">
+      <p>Origen y contexto<br>
+        El Pop Art nació como una respuesta al expresionismo abstracto,<br>
+         un estilo que dominaba el panorama artístico de la época, <br>
+         centrado en la emoción y la subjetividad del artista. Los artistas<br>
+          pop, en contraste, se enfocaron en la objetividad y en las <br>
+          imágenes que representaban la cultura de masas. En una era de <br>
+          rápido crecimiento económico y auge del consumismo tras la Segunda <br>
+          Guerra Mundial, el Pop Art reflejaba el espíritu de los tiempos, <br>
+          cuestionando las convenciones artísticas y celebrando la vida cotidiana.</p>
+    </div>
+    <div class="caja c5">
+
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="foot f1"><h2>© 2023 Pop Arts. Todos los derechos reservados</h2></div>
+</footer>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("misFotos");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

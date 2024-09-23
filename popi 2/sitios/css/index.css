@@ -1,0 +1,188 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lemon&family=Roboto:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+header, main, footer {
+  overflow: hidden;
+}
+
+body {
+  background-color: #839cb5;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+}
+
+header {
+  background-color: #686466;
+}
+
+#encabezado {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#logo {
+  width: auto;
+  height: 120px;
+  border-radius: 2px;
+}
+
+.menu {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Cambio aquí */
+  grid-template-rows: auto;
+  justify-content: center;
+
+}
+
+.menu a {
+  font-size: 22px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: 'Righteous', cursive;
+  text-decoration: none;
+background-color: white;
+  border: 2px solid black;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.menu a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.grid-layout {
+  width: 100%;
+  display: grid;
+  grid-template-areas: 'carrusel carrusel carrusel carrusel carrusel carrusel'
+                       'foto1 foto1 foto1 foto1 texto1 texto1'
+                       'texto2 texto2 texto2 texto2 foto2 foto2';
+}
+
+.caja {
+  background-color: gray;
+  width: 100%;
+  height: 800px;
+}
+
+.caja1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  grid-area: carrusel;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.misFotos {
+  display: none;
+  height: 800px;
+}
+.c2 {
+  background-image: url("C:/Users/santiago/Desktop/popi 2/sitios/fotos/index/po.jpeg");
+  grid-area: foto1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+}
+.c3 {
+  grid-area: texto1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: 20px;
+  background-color: #b1e1e9;
+}
+
+.c4 {
+  background-color: #b1e1e9;
+  grid-area: texto2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin: 20px;
+}
+
+.c5 {
+  grid-area: foto2;
+  background-image: url("C:/Users/santiago/Desktop/popi 2/sitios/fotos/index/l.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+}
+
+h1 {
+  font-family: 'Righteous', cursive;
+  font-size: 60px;
+}
+p {
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+}
+footer{
+  color: black;
+  background-color: #686466;
+  display: grid;
+  grid-template-columns: 70% 15% 15%;
+}
+.foot{
+  width: 100%;
+  height: 100px;
+}
+.f1{
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-layout {
+    grid-template-areas:
+      'carrusel'
+      'foto1'
+      'texto1'
+      'texto2'
+      'foto2';
+  }
+
+  .linklogo {
+    display: none;
+  }
+
+  .c1,
+  .c2,
+  .c3,
+  .c4,
+  .c5 {
+    margin: 10px;
+  }
+h1{
+  justify-self: center;
+  font-size: 40px;
+}
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+    justify-self: center;
+  }
+}

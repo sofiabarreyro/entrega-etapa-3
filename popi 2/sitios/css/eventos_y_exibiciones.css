@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+* {
+box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+overflow: hidden;
+}
+
+body {
+background-color: #839cb5;;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 0;
+padding: 0;
+font-family: 'Righteous', cursive;;
+}
+
+header {
+display: flex;
+align-items: center;
+background-color: #686466;
+color: #fff;
+padding: 10px;
+}
+
+.link {
+flex: 0.1;
+width: 15%;
+height: 100px;
+}
+
+.logo {
+flex: 0.5;
+width: 100%;
+height: 100px;
+background-image: url("C:/Users/santiago/Desktop/popi 2/sitios/fotos/index/loigo.jpeg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 50%;
+}
+
+.titulo {
+flex: 2;
+text-align: center;
+}
+
+.contenedor {
+padding: 20px;
+display: grid;
+width: 100%;
+grid-template-areas: 'cal cal cal cal'
+                     'col1 col2 col3 col4'
+}
+
+.mapouter {
+margin: 10px;
+border: 10px solid;
+border-color: #333;
+}
+
+footer {
+background-color: #686466;
+color: #fff;
+text-align: center;
+padding: 10px;
+}
+
+.columna-1{
+padding: 10px;
+height: 800px;
+width: 100%;
+margin: 10px;
+}
+.columna-1 {
+background-color: #839cb5;
+display: flex;
+align-items: center;
+justify-content: center;
+grid-area: cal;
+}
+
+.col1, .col2, .col3, .col4{
+  background-color: #01000a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  height: 400px;
+}
+.col1{
+  grid-area: col1;
+  background-image: url("C:/Users/santiago/Desktop/popi 2/sitios/fotos/eventos/WhatsApp Image 2024-09-22 at 21.01.09.jpeg");
+}
+.col2{
+  grid-area: col2;
+  background-image: url("C:/Users/santiago/Desktop/popi 2/sitios/fotos/eventos/WhatsApp Image 2024-09-22 at 21.01.13.jpeg");
+}
+.col3{
+  grid-area: col3;
+  background-image: url("C:/Users/santiago/Desktop/popi 2/sitios/fotos/eventos/WhatsApp Image 2024-09-22 at 21.01.17.jpeg");
+}
+.col4{
+  grid-area: col4;
+  background-image: url("C:/Users/santiago/Desktop/popi 2/sitios/fotos/eventos/WhatsApp Image 2024-09-22 at 21.01.20.jpeg");
+}
+.footer {
+color: black;
+background-color: #01000a;
+display: grid;
+grid-template-columns: 70% 15% 15%;
+}
+
+footer{
+color: black;
+background-color: ##686466a7d9ff;
+display: grid;
+grid-template-columns: 70% 15% 15%;
+}
+.foot{
+width: 100%;
+height: 100px;
+}
+.f1{
+display: flex;
+align-items: center;
+text-decoration: none;
+}
+@media screen and (max-width: 1590px) {
+.link,
+.logo,
+.titulo {
+  width: 100%;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.contenedor {
+  grid-template-columns: 100%;
+}
+
+.columna-1,
+.columna-2 {
+  height: auto;
+}
+
+.gmap_canvas{
+      width: 100%;
+      height: 540px;
+    }
+    .link {
+      flex: 0.2;
+    }
+
+}
